@@ -18,8 +18,8 @@ int main(void)
 	int *x,*p; //Allocating the beginning location in memory
 	p = x;     // p acts as the storage of the start location (x[0])
 	x = p + (sizeof *x)*10; // Improperly sized array. To demo undefined behavior.
-	//int x[MAX];
-	//int *x = malloc(sizeof(int)*MAX);
+	//int x[MAX];  // Standard array assignment
+	//int *x = malloc(sizeof(int)*MAX);  // Heap array assignment
 	zeros(MAX, x); //Filling the array with 0's
 	int i;
 	for(i = 0; i < MAX; ++i)
