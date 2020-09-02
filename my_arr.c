@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-const int MAX = 20;
+const int MAX = 1000;
 
 void* zeros(int, int*);
 
@@ -21,9 +21,9 @@ int main(void)
 	//int x[MAX];  // Standard array assignment
 	//int *x = malloc(sizeof(int)*MAX);  // Heap array assignment
 	zeros(MAX, x); //Filling the array with 0's
-	int i;
-	for(i = 0; i < MAX; ++i)
-		printf("%d %p %d\n", i, &x[i], x[i]);
+	//int i;
+	//for(i = 0; i < MAX; ++i)
+	printf("%d %p %d\n", MAX-1, &x[MAX-1], x[MAX-1]);
 }
 
 /*
